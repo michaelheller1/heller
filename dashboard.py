@@ -4,7 +4,7 @@ from dash import html
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("Simple Dashboard"),
+    html.H1("Simple michael Dashboard"),
     html.P("Welcome to your dashboard!"),
     html.Button("Add", id="add-button")
 ])
