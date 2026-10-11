@@ -190,6 +190,18 @@ PART: נספחים | תבניות, מילון מונחים ומקורות
 - **"כל זכות"** (kolzchut.org.il): הסברים נגישים על זכויות וחובות.
 - **מאגר החקיקה הלאומי** (אתר הכנסת) ו**נבו**: נוסחי חוק מלאים.
 
+## מקורות לפרק 28 (למידה מהמובילים)
+
+- **Meta Ad Library** ומרכז השקיפות של Meta: מה מוצג על מודעות מסחריות, ומה מוצג על מודעות באיחוד האירופי (DSA).
+- **TikTok Creative Center** (ads.tiktok.com/business/creativecenter): מודעות מובילות לפי ענף.
+- **Social Blade, Modash, HypeAuditor**: כלים לניתוח חשבונות.
+- **ויקיפדיה, "Jessie Inchauspé"**; **MOO Blog**, "A 'boring' industry with a big opportunity: a conversation with Jessie Inchauspé"; **Quarks (WDR)**, ביקורת מדעית על שיטת Glucose Goddess.
+- **Glory Media**, "Abbey Sharp on becoming an influencer in the food industry".
+- **Business News Australia, SmartCompany, Startup Daily** (2021): דיווחים על מכירת Sweat ל-iFIT.
+- **"Nutrition-related content on Instagram in the United States of America: analytical cross-sectional study"**: מאגר Zaguan, אוניברסיטת סרגוסה.
+- **FTC**: "Guides Concerning the Use of Endorsements and Testimonials in Advertising" (2023) ו-"Trade Regulation Rule on the Use of Consumer Reviews and Testimonials" (2024).
+- **mako, מגזין הבריאות**: כתבה על הסערה סביב משפיענית שקידמה דיאטות.
+
 ## ספרים ומודלים מקצועיים
 
 - **Jeff Walker, "Launch"** (2014): מודל ההשקה (פרק 12).
