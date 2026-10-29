@@ -1,0 +1,247 @@
+<title>טופס שדרוג פרופיל לינקדאין</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap">
+<style>
+/* Layout: single readable RTL column, steps as numbered sections, sticky copy bar at the bottom */
+:root{
+  --bg:#f5f6f4; --surface:#ffffff; --fg:#1d2422; --muted:#5d6763; --line:#d9ddd9;
+  --accent:#1f5f5b; --accent-soft:#e3efed; --on-accent:#ffffff;
+  --display:"Frank Ruhl Libre", "David", Georgia, serif;
+  --body:"Assistant", "Arial Hebrew", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2321; --fg:#e7ece9; --muted:#9aa5a0; --line:#2f3936;
+  --accent:#6fbdb4; --accent-soft:#1f3431; --on-accent:#0d1514; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2321; --fg:#e7ece9; --muted:#9aa5a0; --line:#2f3936;
+  --accent:#6fbdb4; --accent-soft:#1f3431; --on-accent:#0d1514; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 110px}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.25}
+h1{font-size:2.1rem}
+h2{font-size:1.35rem;display:flex;gap:10px;align-items:baseline}
+h2 .n{color:var(--accent);font-size:1rem;font-family:var(--body);font-weight:700}
+h3{margin:0;font-size:1.05rem}
+p{margin:0}
+.lead{color:var(--muted);max-width:62ch}
+section{display:flex;flex-direction:column;gap:16px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:14px}
+.howto{background:var(--accent-soft);border-color:transparent}
+.howto ol{margin:0;padding-inline-start:22px;display:flex;flex-direction:column;gap:6px}
+.howto .alt{color:var(--muted);font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+label{display:flex;flex-direction:column;gap:5px;font-weight:600;font-size:.95rem;min-width:0}
+label small{font-weight:400;color:var(--muted)}
+input,textarea,select{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:9px 11px;width:100%}
+textarea{min-height:90px;resize:vertical}
+input:focus,textarea:focus,select:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.job-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.tag{font-size:.8rem;letter-spacing:.03em;color:var(--accent);font-weight:700}
+button{font:inherit;font-weight:600;border-radius:7px;cursor:pointer;padding:9px 16px;border:1px solid var(--accent);background:transparent;color:var(--accent)}
+button.primary{background:var(--accent);color:var(--on-accent)}
+button.ghost{border-color:var(--line);color:var(--muted);padding:5px 12px;font-size:.9rem}
+.bar{position:fixed;inset:auto 0 0 0;background:var(--surface);border-top:1px solid var(--line);
+  padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:760px;margin:0 auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.status{color:var(--muted);font-size:.9rem}
+#out{min-height:160px;font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main dir="rtl" lang="he">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <h1>שדרוג פרופיל הלינקדאין שלי</h1>
+    <p class="lead">ממלאים את השדות, לוחצים על "העתקה" למטה, ומדביקים בשיחה עם Claude יחד עם קובץ ה-PDF של הפרופיל. מה שכותבים נשמר בדפדפן שלך בלבד.</p>
+  </header>
+
+  <section>
+    <h2>איך מורידים את הפרופיל כ-PDF</h2>
+    <div class="box howto">
+      <ol>
+        <li>נכנסים ללינקדאין <b>מהמחשב</b> (באפליקציה בטלפון האפשרות לא קיימת).</li>
+        <li>לוחצים על התמונה שלך למעלה ← <b>"הצגת פרופיל"</b> (View profile).</li>
+        <li>מתחת לשם ולכותרת, לוחצים על הכפתור <b>"עוד"</b> (More), או "משאבים" (Resources) בחלק מהגרסאות.</li>
+        <li>בוחרים <b>"שמירה כ-PDF"</b> (Save to PDF). הקובץ יורד מיד לתיקיית ההורדות.</li>
+      </ol>
+      <p class="alt">רוצה את כל הנתונים, כולל רשימת המשרות כטבלה? הגדרות ← פרטיות נתונים ← "קבלת עותק של הנתונים שלך" (Get a copy of your data). לינקדאין שולח קישור להורדה במייל, לפעמים רק אחרי כמה שעות.</p>
+    </div>
+  </section>
+
+  <form id="f" autocomplete="off">
+  <div style="display:flex;flex-direction:column;gap:28px">
+    <section>
+      <h2><span class="n">1</span>פרטים בסיסיים</h2>
+      <div class="box">
+        <div class="grid">
+          <label>קישור לפרופיל<input id="url" dir="ltr" placeholder="https://www.linkedin.com/in/..."></label>
+          <label>שפת הפרופיל<select id="lang"><option>עברית</option><option>אנגלית</option><option>עברית ואנגלית</option></select></label>
+          <label>שם מלא<input id="name"></label>
+          <label>מיקום<input id="loc" placeholder="תל אביב"></label>
+        </div>
+        <label>כותרת נוכחית (Headline)<input id="headline"></label>
+        <label>אודות (About) <small>להעתיק מהפרופיל, או להשאיר ריק אם מצרפים PDF</small><textarea id="about"></textarea></label>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="n">2</span>משרות לעדכון</h2>
+      <p class="lead">משרות שלא מופיעות בפרופיל או שהשתנו. כדאי לכתוב הישגים עם מספרים, למשל "קיצרתי זמני טיפול ב-30%".</p>
+      <div id="jobs" style="display:flex;flex-direction:column;gap:16px"></div>
+      <div><button type="button" id="addJob">+ הוספת משרה</button></div>
+    </section>
+
+    <section>
+      <h2><span class="n">3</span>השכלה וכישורים</h2>
+      <div class="box">
+        <label>השכלה <small>מוסד, תואר, תחום, שנים</small><textarea id="edu"></textarea></label>
+        <label>הסמכות וקורסים<textarea id="certs"></textarea></label>
+        <div class="grid">
+          <label>כישורים (Skills)<input id="skills"></label>
+          <label>שפות<input id="langs" placeholder="עברית, אנגלית"></label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="n">4</span>היעדים שלך</h2>
+      <div class="box">
+        <div class="grid">
+          <label>מטרת הפרופיל<select id="goal"><option>חיפוש עבודה</option><option>מיתוג אישי</option><option>גיוס לקוחות</option><option>נטוורקינג</option></select></label>
+          <label>רמת בכירות<select id="level"><option>ג'וניור</option><option>מנוסה</option><option>ניהול</option><option>בכיר</option></select></label>
+        </div>
+        <label>תפקידים שאני מכוון אליהם<input id="target"></label>
+        <label>תעשיות או חברות מועדפות<input id="industry"></label>
+        <label>מה מייחד אותי <small>2–3 משפטים</small><textarea id="unique"></textarea></label>
+        <label>מה לא צריך להופיע<input id="avoid"></label>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="n">5</span>הטקסט המוכן</h2>
+      <div class="box">
+        <p class="lead">זה הטקסט שיועתק. אפשר לערוך אותו כאן לפני ההעתקה.</p>
+        <textarea id="out" readonly></textarea>
+      </div>
+    </section>
+  </div>
+  </form>
+</main>
+
+<div class="bar" dir="rtl"><div class="bar-in">
+  <button type="button" class="primary" id="copy">העתקת הטקסט המלא</button>
+  <button type="button" class="ghost" id="clear">ניקוי הטופס</button>
+  <span class="status" id="status" aria-live="polite"></span>
+</div></div>
+
+<template id="jobTpl">
+  <div class="box job">
+    <div class="job-head"><span class="tag"></span><button type="button" class="ghost rm">הסרה</button></div>
+    <div class="grid">
+      <label>תפקיד<input data-k="title"></label>
+      <label>חברה<input data-k="company"></label>
+      <label>סוג העסקה<select data-k="type"><option>משרה מלאה</option><option>משרה חלקית</option><option>פרילנס</option><option>חוזה</option></select></label>
+      <label>מיקום ומתכונת<input data-k="where" placeholder="ירושלים, היברידי"></label>
+      <label>מתאריך<input data-k="from" placeholder="03/2023"></label>
+      <label>עד תאריך<input data-k="to" placeholder="היום"></label>
+    </div>
+    <label>תחומי אחריות<textarea data-k="duties"></textarea></label>
+    <label>הישגים במספרים<textarea data-k="wins"></textarea></label>
+    <label>כלים וטכנולוגיות<input data-k="tools"></label>
+    <label>סטטוס בפרופיל<select data-k="status"><option>משרה חדשה, לא מופיעה</option><option>קיימת, צריך לעדכן</option><option>הסתיימה, צריך לסגור תאריך</option><option>קידום באותה חברה</option></select></label>
+  </div>
+</template>
+
+<script>
+const KEY="li-form-v1", $=id=>document.getElementById(id);
+const fields=["url","lang","name","loc","headline","about","edu","certs","skills","langs","goal","level","target","industry","unique","avoid"];
+const jobsEl=$("jobs"), tpl=$("jobTpl");
+
+function addJob(data={}){
+  const node=tpl.content.firstElementChild.cloneNode(true);
+  node.querySelectorAll("[data-k]").forEach(el=>{ if(data[el.dataset.k]!=null) el.value=data[el.dataset.k]; });
+  node.querySelector(".rm").onclick=()=>{node.remove();renumber();update();};
+  jobsEl.appendChild(node); renumber();
+}
+function renumber(){
+  [...jobsEl.children].forEach((j,i)=>{
+    j.querySelectorAll("input,select,textarea").forEach(el=>el.id=`job${i}-${el.dataset.k}`);
+    j.querySelector(".tag").textContent=i===0?"משרה נוכחית":`משרה ${i+1}`;
+  });
+}
+function collect(){
+  const d={}; fields.forEach(k=>d[k]=$(k).value.trim());
+  d.jobs=[...jobsEl.children].map(j=>{const o={};j.querySelectorAll("[data-k]").forEach(el=>o[el.dataset.k]=el.value.trim());return o;});
+  return d;
+}
+const line=(l,v)=>v?`${l}: ${v}\n`:"";
+function build(d){
+  let t=`אני רוצה לשפר ולעדכן את פרופיל הלינקדאין שלי. בבקשה:
+1. עבור על הפרופיל הנוכחי ותן ציון (1–10) לכל סעיף, עם הסבר קצר.
+2. הצע ניסוח משופר לכותרת, לסעיף "אודות" ולכל משרה.
+3. נסח רשומות למשרות שבחלק "משרות לעדכון".
+4. סמן טעויות כתיב, חוסר עקביות ופערים בציר הזמן.
+5. המלץ על מילות מפתח וכישורים שמתאימים ליעדים שלי.
+(אם צירפתי PDF של הפרופיל, השתמש בו כמקור לפרופיל הנוכחי.)
+
+== הפרופיל הנוכחי ==
+`;
+  t+=line("קישור",d.url)+line("שפת הפרופיל",d.lang)+line("שם",d.name)+line("מיקום",d.loc)+line("כותרת",d.headline);
+  if(d.about) t+=`אודות:\n${d.about}\n`;
+  const jobs=d.jobs.filter(j=>j.title||j.company);
+  if(jobs.length){
+    t+=`\n== משרות לעדכון ==\n`;
+    jobs.forEach((j,i)=>{
+      t+=`\n-- ${i===0?"משרה נוכחית":"משרה "+(i+1)} --\n`;
+      t+=line("סטטוס",j.status)+line("תפקיד",j.title)+line("חברה",j.company)+line("סוג העסקה",j.type)+line("מיקום ומתכונת",j.where);
+      if(j.from||j.to) t+=`תאריכים: ${j.from||"?"} עד ${j.to||"היום"}\n`;
+      t+=line("תחומי אחריות",j.duties)+line("הישגים",j.wins)+line("כלים",j.tools);
+    });
+  }
+  if(d.edu||d.certs||d.skills||d.langs){
+    t+=`\n== השכלה וכישורים ==\n`+line("השכלה",d.edu)+line("הסמכות",d.certs)+line("כישורים",d.skills)+line("שפות",d.langs);
+  }
+  t+=`\n== היעדים שלי ==\n`+line("מטרה",d.goal)+line("רמת בכירות",d.level)+line("תפקידי יעד",d.target)+line("תעשיות/חברות",d.industry)+line("מה מייחד אותי",d.unique)+line("לא להופיע",d.avoid);
+  t+=`
+== פורמט התשובה ==
+1. סיכום: 3 חוזקות ו-3 שיפורים חשובים.
+2. טבלת ציונים לכל סעיף.
+3. כותרת: 3 חלופות, עד 220 תווים כל אחת.
+4. אודות: גרסה מוכנה להדבקה, עד 2,600 תווים.
+5. ניסיון: לכל משרה משפט פתיחה ו-3–5 נקודות שמדגישות הישגים.
+6. כישורים: עד 15, לפי סדר עדיפות.
+7. רשימת תיקונים.
+8. צעדים נוספים: תמונה, רקע, המלצות, קישור מותאם, "פתוח להזדמנויות".`;
+  return t;
+}
+function update(){
+  const d=collect(); $("out").value=build(d);
+  try{localStorage.setItem(KEY,JSON.stringify(d));}catch(e){}
+}
+function load(){
+  let d=null; try{d=JSON.parse(localStorage.getItem(KEY));}catch(e){}
+  if(d){ fields.forEach(k=>{if(d[k]!=null)$(k).value=d[k];}); (d.jobs&&d.jobs.length?d.jobs:[{}]).forEach(addJob); }
+  else { addJob({}); addJob({}); }
+  update();
+}
+$("f").addEventListener("input",update);
+$("f").addEventListener("change",update);
+$("f").addEventListener("submit",e=>e.preventDefault());
+$("addJob").onclick=()=>{addJob({});update();};
+let armed=false;
+$("clear").onclick=()=>{
+  if(!armed){armed=true;$("clear").textContent="ללחוץ שוב לאישור";setTimeout(()=>{armed=false;$("clear").textContent="ניקוי הטופס";},3000);return;}
+  armed=false;$("clear").textContent="ניקוי הטופס";
+  $("f").reset(); jobsEl.innerHTML=""; addJob({}); addJob({}); update(); $("status").textContent="הטופס נוקה";
+};
+$("copy").onclick=()=>{
+  const txt=$("out").value;
+  const fallback=()=>{const o=$("out");o.focus();o.select();$("status").textContent="הטקסט מסומן. אפשר להעתיק עם Ctrl+C";};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(()=>$("status").textContent="הועתק. עכשיו להדביק בשיחה עם Claude",fallback);
+  } else fallback();
+};
+load();
+</script>
